@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻动态_网易游戏官网</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src=js/jquery-1.12.4.js></script>
+    <script src=js/topnav.js></script>
+    <script src="js/animate.js"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script>
+        window.onload = function () {
+            var config = [
+                {
+                    "top": 0,
+                    "left": 0
+                },
+                {
+                    "top": 0,
+                    "left": 326
+                },
+                {
+                    "top": 0,
+                    "left": 652
+                },
+                {
+                    "top": 0,
+                    "left": 978
+                },
+                {
+                    "top": 238,
+                    "left": 0
+                },
+                {
+                    "top": 238,
+                    "left": 326
+                },
+                {
+                    "top": 238,
+                    "left": 652
+                },
+                {
+                    "top": 238,
+                    "left": 978
+                },
+                {
+                    "top": 476,
+                    "left": 0
+                },
+                {
+                    "top": 476,
+                    "left": 326
+                },
+                {
+                    "top": 476,
+                    "left": 652
+                },
+                {
+                    "top": 476,
+                    "left": 978
+                },
+            ]
+
+            var ul = document.getElementById("ullist");
+            var lis = ul.children;
+            for (var i = 0; i < lis.length; i++) {
+                animate(lis[i], config[i]);
+            }
+
+
+            for (var i = 0; i < lis.length; i++) {
+
+                lis[i].onmouseover = function () {
+
+                    var top = parseInt(this.style.top);
+                    this.style.top = top - 5 + "px";
+                }
+                lis[i].onmouseout = function () {
+                    var top = parseInt(this.style.top);
+                    this.style.top = top + 5 + "px";
+                }
+            }
+            var smallul = document.getElementById("smallul");
+            var smalllis = smallul.children;
+
+
+            for (var i = 0; i < smalllis.length; i++) {
+                smalllis[i].onclick = function () {
+
+                    for (var i = 0; i < smalllis.length; i++) {
+                        smalllis[i].className = "";
+                    }
+                    this.className = "smallli";
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<div class="Nav">
+    <div class="topBar">
+        <div class="topNav">
+            <h1 class="logo">
+                <a href="http://game.163.com/">网易游戏</a>
+            </h1>
+            <ul class="ulNav">
+                <li><a href="game.html"><i></i>游戏，热爱才懂</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>网易游戏App</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>关于网易游戏</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>人才招聘</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>客服中心</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>爱玩网</a></li>
+            </ul>
+            <a class="rightNav" href=javascript:;>
+                <i></i>
+            </a>
+
+            <div class="topContent">
+                <p>游戏列表
+                    <span><i class="newGame"></i>最新游戏</span>
+                    <span><i class="hotGame"></i>热门游戏</span>
+                </p>
+                <div class="topConLeft fl">
+                    <h2 class="a topTitle">
+                        <em>客户端游戏</em>
+                    </h2>
+                    <div class="jsby box fl">
+                        <h2 class="fengl">角色扮演</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGamen"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+
+                        </ul>
+                    </div>
+                    <div class="jjxx box fl">
+                        <h2 class="fengl">竞技/休闲</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="topConright fl">
+                    <h2 class="topTitle">
+                        <em>手机游戏</em>
+                    </h2>
+                    <div class="rmtj box fl">
+                        <h2 class="fengl">热门推荐</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                    <div class="xptj box fl">
+                        <h2 class="fengl">新品推荐</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--关闭-->
+                <a class="close" href=javascript:; target=_blank>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrap">
+    <div class="main ">
+        <div class="title heart">
+            <p class="tit">
+                <span>新闻汇总</span>
+            </p>
+        </div>
+        <div class="list">
+            <ul class="bigbox heart" id="ullist">
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                <b class="triangle-topleft"></b>
+                <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                <p class="time">
+                    2016.11.18
+                </p>
+                <a href="javascirpt:;"><p class=remark>
+                    行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                </p></a>
+            </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+                <li class="square ">
+                    <b class="triangle-topleft"></b>
+                    <a href="javascript:;"><span>社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</span></a>
+                    <p class="time">
+                        2016.11.18
+                    </p>
+                    <a href="javascirpt:;"><p class=remark>
+                        行走世间，全是妖怪!网易首款3D都市驱魔手游《异次元战姬》11月17日新版本现已上线，“魔界之门”即将开启。不仅有更强大的魔物让你战个痛快，更有社交新玩法等你尝试!今日《异次元战姬》新版本上线，更强妖气来袭，战斗升级!请各位驱魔人们集结你们的力量拯救世界吧!
+                    </p></a>
+                </li>
+
+            </ul>
+            <div class="smallbox">
+                <ul class="fanye" id="smallul">
+                    <a href="javascript:;" class="smallli">
+                        <li>1</li>
+                    </a>
+                    <a href="javascript:;">
+                        <li>2</li>
+                    </a>
+                    <a href="javascript:;">
+                        <li>3</li>
+                    </a>
+                    <a href="javascript:;">
+                        <li>4</li>
+                    </a>
+                    <a href="javascript:;">
+                        <li>5</li>
+                    </a>
+                </ul>
+                <a href="javascript:;"><p id="p1">下一页</p></a>
+                <a href="javascript:;"><p id="p2">末页</p></a>
+                <p>当前第1页，一共283页</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-1">
+        <a href="javascript:;"><img src="images/bottom.jpg" alt="" class="fl"></a>
+        <p class="message fl"><a href="javascript:;">公司简介</a> - <a href="javascript:;">客户服务</a> - <a href="javascript:;">相关法律</a> - <a href="javascript:;">网易游戏</a> - <a href="javascript:;">联系我们</a> - <a href="javascript:;">商务合作</a> - <a href="javascript:;">加入我们</a></p>
+        <p class="info fl"> 网易公司版权所有 ©1997-2016　　粤网文[2014]0636-236号</p>
+    </div>
+    <a href="javascript:;"></a>
+</div>
+</body>
+</html>

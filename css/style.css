@@ -1,0 +1,158 @@
+.heart {
+    width:1280px;
+    margin: 0 auto;
+}
+.wrap {
+    width:100%;
+    height:1000px;
+    background: url("../images/newsbackground.jpg")  no-repeat;
+}
+h1 {
+    font-size: 30px;
+}
+.title {
+    width: 1280px;
+    height: 180px;
+    overflow: hidden;
+}
+.tit {
+    width:1260px;
+    height: 84px;
+    margin: 96px 0 0 20px;
+}
+.tit span {
+    border-bottom: 4px solid #c21d35;
+    display: inline-block;
+    height: 80px;
+    font: 40px/80px "Microsoft YaHei";
+    color: #fff;
+}
+.list {
+    margin: 55px 0 ;
+}
+.bigbox {
+    width: 1280px;
+    height: 714px;
+    /*background-color: #00CCCC;*/
+    position: relative;
+}
+
+.square {
+    width: 302px;
+    height: 202px;
+    background: #F7F7F7;
+    /*margin: 0 19px 36px 0;*/
+    position: absolute;
+    top: 0 ;
+    left: 0 ;
+    overflow:hidden;
+
+
+}
+.square span {
+    font: 16px/40px "Microsoft YaHei";
+    color: #242424;
+    display: block;
+    height: 40px;
+    width: 264px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.square .time {
+    width:264px;
+    height:24px;
+    padding-left: 20px;
+    text-align: center;
+}
+.square .remark {
+    width:264px;
+    height:144px;
+    text-indent: 2em;
+    text-align: left;
+    line-height: 24px;
+    color: #626262;
+    font-size: 12px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.square1 {
+    position: absolute;
+    top:0;
+    left:320px;
+}
+.triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 15px solid #bababa;
+    border-right: 15px solid transparent;
+    display: block;
+}
+.bbottom {
+    border-bottom:3px solid #919191;
+}
+.fanye {
+    float: left;
+    list-style: none;
+    width:150px;
+    height:34px;
+}
+.fanye li {
+    float: left;
+    width:24px;
+    height:34px;
+    text-align: center;
+}
+.fanye a {
+    display: inline-block;
+    width:24px;
+    height:34px;
+
+    font:18px/34px "microsoft yahei";
+}
+.fanye a:hover {
+    width:22px;
+    height:32px;
+    line-height: 32px;
+    border: 1px solid #bababa;
+}
+.smallli {
+    background: #C61A06;
+    color:#ffffff;
+}
+.smallbox{
+    width: 530px;
+    height: 34px;
+    margin: 0 auto;
+    text-align: center;
+}
+.smallbox p {
+    float: left;
+    height:34px;
+    font:18px/34px "microsoft yahei";
+    margin-left:10px;
+}
+.footer {
+    width:100%;
+    height:56px;
+    background-color: #272a2c;
+    padding:20px 0;
+
+}
+.footer-1 {
+    width:753px;
+    height:41px;
+    background-color: #272a2c;
+    padding:15px 0;
+    text-align:center;
+    margin: 0 auto ;
+
+}
+.message {
+    color: #c61a06;
+}
+.message a{
+    color: #c61a06;
+}
+.info{
+    color:#ccc;
+}

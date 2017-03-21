@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易游戏</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/features.css"/>
+    <link rel="stylesheet" href="css/hotGame.css">
+    <link rel="stylesheet" href="css/public.css">
+    <script src="js/gameDynamics.js"></script>
+    <script src="js/index.js"></script>
+    <script src=js/jquery-1.12.4.js></script>
+    <script src=js/topnav.js></script>
+    <script src="js/Game_eatures.js"></script>
+    <script src="js/animate.js"></script>
+    <link rel="stylesheet" href="css/stylesheet_s.css">
+    <script src="js/hotGame.js"></script>
+    <link rel=stylesheet href=css/gameHelp.css>
+    <link rel=stylesheet href=css/public.css>
+
+</head>
+<body>
+<!--背景音乐-->
+<audio autoplay=autoplay>
+    <source src="music/game-music.mp3" type="audio/mp3"/>
+</audio>
+
+<!--导航栏部分开始-->
+<div class="Nav">
+    <div class="topBar">
+        <div class="topNav">
+            <h1 class="logo">
+                <a href="javascript:;">网易游戏</a>
+            </h1>
+            <ul class="ulNav">
+                <li><a href="game.html"><i></i>游戏，热爱才懂</a></li>
+                <li>·</li>
+                <li><a href="gameApp.html"><i></i>网易游戏App</a></li>
+                <li>·</li>
+                <li><a href="gamePic.html"><i></i>玩家风采</a></li>
+                <li>·</li>
+                <li><a href=#><i></i>人才招聘</a></li>
+                <li>·</li>
+                <li><a href="register.html"><i></i>注册</a></li>
+                <li>·</li>
+                <li><a href="login.html"><i></i>登录</a></li>
+            </ul>
+            <a class="rightNav" href=javascript:;>
+                <i></i>
+            </a>
+
+            <div class="topContent">
+                <p>游戏列表
+                    <span><i class="newGame"></i>最新游戏</span>
+                    <span><i class="hotGame"></i>热门游戏</span>
+                </p>
+
+                <div class="topConLeft fl">
+                    <h2 class="a topTitle">
+                        <em>客户端游戏</em>
+                    </h2>
+
+                    <div class="jsby box fl">
+                        <h2 class="fengl">角色扮演</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGamen"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+
+                        </ul>
+                    </div>
+                    <div class="jjxx box fl">
+                        <h2 class="fengl">竞技/休闲</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="topConright fl">
+                    <h2 class="topTitle">
+                        <em>手机游戏</em>
+                    </h2>
+
+                    <div class="rmtj box fl">
+                        <h2 class="fengl">热门推荐</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="hotGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                    <div class="xptj box fl">
+                        <h2 class="fengl">新品推荐</h2>
+                        <ul>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class="newGame"></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>梦幻西游电脑版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2经典版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>西楚霸王</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大话2免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新大话3免费版</a><em class=""></em></li>
+                            <li><a href=# target=_blank>大唐无双零</a><em class=""></em></li>
+                            <li><a href=# target=_blank>武魂2</a><em class=""></em></li>
+                            <li><a href=# target=_blank>斩魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                            <li><a href=# target=_blank>魔兽世界</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天下3</a><em class=""></em></li>
+                            <li><a href=# target=_blank>天谕</a><em class=""></em></li>
+                            <li><a href=# target=_blank>新倩女幽魂</a><em class=""></em></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--关闭-->
+                <a class="close" href=javascript:; target=_blank>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航栏部分结束-->
+
+
+<!--轮播图部分开始-->
+<div class="all" id='box'>
+    <div class="screen">
+        <ul>
+            <li>
+                <img src="images/lb01.jpg">
+
+                <div class="tu1 tu">
+                    <h2 class="jianjie">全自由沙盘战略</h2>
+
+                    <h3 class="jianjies">率土之滨寸土必争的乐趣</h3>
+
+                    <p>
+                        一个三国沙盘世界，数万玩家，三个月，场上激烈对抗，场外合纵连横。网易全自由沙盘战略手游《率土之滨》迎来全新征服赛季更新和美术资源全面重置，每一寸土地皆可争夺，利益决定战略。是乱世永恒，还是天下一统？这是一场你亲自创造的风云史！
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+            <li>
+                <img src="images/lb02.jpg">
+
+                <div class="tu2 tu">
+                    <h2 class="jianjie">异次元战姬-魔界之门</h2>
+
+                    <h3 class="jianjies">新资料片今日上线</h3>
+
+                    <p>
+                        行走世间，全是妖怪！《异次元战姬》全新资料片“魔界之门”来袭，多人协力副本登场，更有全新限定时装，速速与山新一起签订驱魔契约，体验3D动作新篇章吧！
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+            <li>
+                <img src="images/lb03.jpg">
+
+                <div class="tu3 tu">
+                    <h2 class="jianjie">国民玄幻手游·倩女幽魂</h2>
+
+                    <h3 class="jianjies">第八大全新职业登场</h3>
+
+                    <p>
+                        新一代国民玄幻手游《倩女幽魂》11月全新版本来袭！新角色男侠客登场，新增现实地理位置定位共享，跨服关宁校场、150级全新等级开启，还有崭新精美时装坐骑，伴你云游四海！
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+            <li>
+                <img src="images/lb04.jpg">
+
+                <div class="tu4 tu">
+                    <h2 class="jianjie">梦幻西游无双·门派转生</h2>
+
+                    <h3 class="jianjies">自由转换门派礼包助力送</h3>
+
+                    <p>
+                        即时动作版梦幻西游！为梦西行，《梦幻西游》无双版门派转生即将开启！趣味不停，嘉年华专服欢乐来袭。
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+            <li>
+                <img src="images/lb05.jpg">
+
+                <div class="tu5 tu">
+                    <h2 class="jianjie">乱斗西游2·全英雄觉醒</h2>
+
+                    <h3 class="jianjies">对战升级 一场新的较量</h3>
+
+                    <p>
+                        《乱斗西游2》网易超人气英雄对战手游，“全英雄觉醒”正式上线，王者天下积分赛、三界平乱、组队副本等革新体验，邀你来战！
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+            <li>
+                <img src="images/lb01.jpg">
+
+                <div class="tu6 tu">
+                    <h2 class="jianjie">全自由沙盘战略</h2>
+
+                    <h3 class="jianjies">率土之滨寸土必争的乐趣</h3>
+
+                    <p>
+                        一个三国沙盘世界，数万玩家，三个月，场上激烈对抗，场外合纵连横。网易全自由沙盘战略手游《率土之滨》迎来全新征服赛季更新和美术资源全面重置，每一寸土地皆可争夺，利益决定战略。是乱世永恒，还是天下一统？这是一场你亲自创造的风云史！
+                    </p>
+                    <i><img src="images/lb06.png" alt=""></i>
+                </div>
+            </li>
+        </ul>
+        <ol>
+
+        </ol>
+    </div>
+    <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+</div>
+<!--轮播图部分结束-->
+
+
+<!--游戏动态部分开始-->
+<div class="con-wrap">
+    <div class="con-wrap-whole">
+        <div class="con-wrap-left">
+            <div class="con-wrap-timeBox fl">
+                <p class="timeBox-month">Nov</p>
+
+                <h1>24</h1>
+
+                <div class="timeBox-redH"></div>
+                <p class="title">游戏动态</p>
+                <!--小的li标签随着轮播图动-->
+                <div class="little-circle">
+                    <a href="javascript:;" class="curr"></a>
+                    <a href="javascript:;" class="gl"></a>
+                </div>
+            </div>
+            <div class="con-wrap-picBox">
+                <div class="con-zj">
+                    <div class="picBox-left">
+                        <div class="picBox01">
+                            <div class="picBox-bgi p1"></div>
+                            <a href="#">
+                                <em class="bgi-font-bottom"></em>
+                                <em class="bgi-font-top"></em>
+                                <span class="txt1">《乱斗西游2》</span>
+                                <span class="txt2">对战升级 来一场新的较量</span>
+                                <span class="daySelf" data-day=""><span></span>天</span>
+                            </a>
+
+                            <p>
+                        <span class="likes">
+                           <a class="likes-love" id="a123"><i id="a234">1</i>
+                               <em></em>人赞过
+                           </a>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="picBox01">
+                            <div class="picBox-bgi p3"></div>
+                            <a href="#">
+                                <em class="bgi-font-bottom"></em>
+                                <em class="bgi-font-top"></em>
+                                <span class="txt1">《天下》手游福利全开，双11庆典大放送！</span>
+                                <span class="txt2">《天下》手游双11庆典现已开启！消费充值多重福利享不停！</span>
+                                <span class="daySelf" data-day=""><span></span>天</span>
+                            </a>
+
+                            <p>
+                        <span class="likes">
+                           <a class="likes-love" id="a123"><i id="a234">1</i>
+                               <em></em>人赞过
+                           </a>
+                        </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="picBox-right">
+                        <div class="picBox01">
+                            <div class="picBox-bgi p2"></div>
+                            <a href="#">
+                                <em class="bgi-font-bottom"></em>
+                                <em class="bgi-font-top"></em>
+                                <span class="txt1">《劲舞团》手游真爱季活动进行中</span>
+                                <span class="txt2">劲舞真爱季，初冬暖人心</span>
+                                <span class="daySelf" data-day=""><span></span>天</span>
+                            </a>
+
+                            <p>
+                        <span class="likes">
+                           <a class="likes-love" id="a123"><i id="a234">1</i>
+                               <em></em>人赞过
+                           </a>
+                        </span>
+                            </p>
+                        </div>
+                        <div class="picBox01">
+                            <div class="picBox-bgi"></div>
+                            <a href="#">
+                                <em class="bgi-font-bottom"></em>
+                                <em class="bgi-font-top"></em>
+                                <span class="txt1">梦幻西游无双版门派转生开启</span>
+                                <span class="txt2">自由转换门派 礼包助力再战三界</span>
+                                <span class="daySelf" data-day=""><span></span>天</span>
+                            </a>
+
+                            <p>
+                        <span class="likes">
+                            <a class="likes-love" id="a123"><i id="a234">1</i>
+                                <em></em>人赞过
+                            </a>
+                        </span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="con-wrap-leftR"></div>
+
+        </div>
+        <div class="con-wrap-right">
+            <a href="news_index.html" class="addButton"></a>
+
+            <div class="newBox">
+                <div class="newBox-top">
+                    <a href="#" class="hot-news" target="_blank">社交新玩法 《异次元战姬》“魔界之门”资料片今日上线</a>
+                </div>
+                <div class="newBoxList">
+                    <ul>
+                        <li><a href="javascript:;" title="乱世智者为尊  《率土之滨》玩家创造真实历史">乱世智者为尊 《率土之滨》玩家创造真实历史</a><span>11-24</span></li>
+                        <li><a href="javascript:;" title="召唤觉醒技能《乱斗西游2》新版抢鲜曝">召唤觉醒技能《乱斗西游2》新版抢鲜曝</a><span>11-24</span></li>
+                        <li><a href="javascript:;" title="《天骄铁骑》先锋测试 今日震撼开启">《天骄铁骑》先锋测试 今日震撼开启</a><span>11-24</span></li>
+                        <li><a href="javascript:;" title="未成年少女！详解《元气战姬学院》兽灵族 · 薇尔琳身世之谜！">未成年少女！详解《元气战姬学院》兽灵族 ·
+                            薇</a><span>11-23</span></li>
+                        <li><a href="javascript:;" title="魑魅之卷 永生之谜 《阴阳师》首部大型资料片正式上线">魑魅之卷 永生之谜
+                            《阴阳师》首部大型资料片正式</a><span>11-23</span></li>
+                        <li><a href="javascript:;" title="网易Q3财报：净收入创历史新高 上百款手游整体表现优异">网易Q3财报：净收入创历史新高
+                            上百款手游整体表现</a><span>11-22</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--游戏动态部分结束-->
+
+
+<!--游戏热点开始-->
+<div class="con-wrap5">
+    <div class="hotgame-con">
+        <p class="con-title">
+            游戏热点
+            <a href="###" class="game-video">游戏视频</a> .
+            <a href="###" class="player">玩家热议</a>
+            <a href="###" class="change">换一批<i></i></a>
+        </p>
+
+        <div class="box1 box-all">
+            <div class="box-con-wrap" style="display: block">
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img1.jpg" alt=""></a>
+
+                    <p class="box-title">《三少爷的剑》10月12日终极测试</p>
+
+                    <p class="box-dec">创新配招战斗、清新水墨画风！3D古龙正版策略招式手游《三少爷的剑》，10月12日终极限量测试！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>93</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img2.jpg" alt=""></a>
+
+                    <p class="box-title">《三少爷的剑》10月12日终极测试</p>
+
+                    <p class="box-dec">创新配招战斗、清新水墨画风！3D古龙正版策略招式手游《三少爷的剑》，10月12日终极限量测试！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>131</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img3.jpg" alt=""></a>
+
+                    <p class="box-title">无限战争手游公测火爆开启</p>
+
+                    <p class="box-dec">沙盘演绎，极致烧脑，300万军团搭配任你选——RTS神作崛起，满足你对即时战略的一切想象。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>488</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img4.jpg" alt=""></a>
+
+                    <p class="box-title">胡歌亲贺《大话西游》手游周年庆</p>
+
+                    <p class="box-dec">中秋国庆周年庆，三节齐庆送神兽！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>193</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img5.jpg" alt=""></a>
+
+                    <p class="box-title">《大航海之路》今日全平台公测</p>
+
+                    <p class="box-dec">网易网易首款航海冒险手游《大航海之路》今日App Store首发。我们的征途是星辰大海！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>131</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img6.jpg" alt=""></a>
+
+                    <p class="box-title">《来自星星的你》手游浪漫归来</p>
+
+                    <p class="box-dec">韩国正版授权、换装经营手游《来自星星的你（官方游戏）》今日开启全新自由染色玩法，更有珍品阁更新等超多活动！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>84</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img7.jpg" alt=""></a>
+
+                    <p class="box-title">花泽香菜献声妖刀少女</p>
+
+                    <p class="box-dec">妖刀少女异闻录今日限免全平台黑化公测，下载游戏，领取限时妖刀“少女百人斩”，花泽香菜陪你一起黑化</p>
+                    <span class="like"><a href="###"><i>+1</i><em>244</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img8.jpg" alt=""></a>
+
+                    <p class="box-title">声控福利!花泽香菜、酋长献声妖刀少女</p>
+
+                    <p class="box-dec">调教少女的二次元手游大作，《妖刀少女异闻录》AppStore今日首发,拔刀开启!</p>
+                    <span class="like"><a href="###"><i>+1</i><em>152</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img9.jpg" alt=""></a>
+
+                    <p class="box-title">梦幻西游无双版，热血梦幻一触即战</p>
+
+                    <p class="box-dec">梦幻西游经典延续，全新即时玩法，酷爽竞技动作体验，给你不一样的梦幻西游！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>350</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img10.jpg" alt=""></a>
+
+                    <p class="box-title">新倩女幽魂"一笑倾城"资料片</p>
+
+                    <p class="box-dec">电视剧《微微一笑很倾城》虚拟世界架构方，"一笑倾城"大型资料片今日公测！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>236</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img11.jpg" alt=""></a>
+
+                    <p class="box-title">《HIT：我守护的一切》今日国服终测</p>
+
+                    <p class="box-dec">网易高颜值动作手游《HIT：我守护的一切》今日国服终测！奥运、泳装纷纷加入，打击感强势上线</p>
+                    <span class="like"><a href="###"><i>+1</i><em>1799</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="javascript:;" class="link"><img src="images/img12.jpg" alt=""></a>
+
+                    <p class="box-title">无限战争手游公测火爆开启</p>
+
+                    <p class="box-dec">沙盘演绎，极致烧脑，300万军团搭配任你选——RTS神作崛起，满足你对即时战略的一切想象。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>2527</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+        </div>
+        <div class="box2 box-all">
+            <div class="box-con-wrap" style="display: block">
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot1.png" alt=""></a>
+
+                    <p class="box-title">【脑洞漫画】吓得小红帽镰刀都掉了</p>
+
+                    <p class="box-dec">一个非常醒神的《杀气小红帽》！</p>
+                    <span class="like"><a href="###"><i>+1</i><em>1187</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot2.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：财报一则</p>
+
+                    <p class="box-dec">前些天朋友圈被各种Q1财报刷屏了。今天……</p>
+                    <span class="like"><a href="###"><i>+1</i><em>765</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot3.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：公益篇</p>
+
+                    <p class="box-dec">不是学长大哥不懂得怜惜小朋友。身处那种地方…</p>
+                    <span class="like"><a href="###"><i>+1</i><em>721</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot4.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：母亲节</p>
+
+                    <p class="box-dec">总有一支箭会戳中你的膝盖，继而化作一股暖流…</p>
+                    <span class="like"><a href="###"><i>+1</i><em>117</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot5.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：世界那么大</p>
+
+                    <p class="box-dec">下班把最新的资料片考回家，节后挥霍掉剩余的年假。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>93</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot6.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：学弟</p>
+
+                    <p class="box-dec">经历风风雨雨之后，我决定将最珍贵的东西交给小学弟。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>100</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot7.jpg" alt=""></a>
+
+                    <p class="box-title">网易游戏热爱者日记：超人的地球日</p>
+
+                    <p class="box-dec">一年一度的地球日又到了，超人君又有什么新姿势呢？</p>
+                    <span class="like"><a href="###"><i>+1</i><em>90</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot8.jpg" alt=""></a>
+
+                    <p class="box-title">说出陪伴你梦幻的另一半的姓名吧</p>
+
+                    <p class="box-dec">大声说出你的另一半的名称吧，因为这是我们美好的记忆。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>90</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot9.jpg" alt=""></a>
+
+                    <p class="box-title">夏天到了！如何防蚊请支招</p>
+
+                    <p class="box-dec">气温逐渐回升，多雨潮湿的春夏来临，蚊子君开始活跃。</p>
+                    <span class="like"><a href="###"><i>+1</i><em>91</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+            <div class="box-con-wrap">
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot10.jpg" alt=""></a>
+
+                    <p class="box-title">说出你的因何而恋上梦幻西游</p>
+
+                    <p class="box-dec">《恋西游》是否让你想到了当年自己初入梦幻的点滴？</p>
+                    <span class="like"><a href="###"><i>+1</i><em>94</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot11.jpg" alt=""></a>
+
+                    <p class="box-title">duang是啥？你造，你敢duang吗！</p>
+
+                    <p class="box-dec">duang，2015火了！神图告诉你duang是啥？</p>
+                    <span class="like"><a href="###"><i>+1</i><em>108</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+                <div class="box-con">
+                    <a href="#" class="link"><img src="images/hot12.jpg" alt=""></a>
+
+                    <p class="box-title">一起来说说那些年我们仰慕过的大神</p>
+
+                    <p class="box-dec">当年屁颠屁颠地追随着各路大神步伐的日子你还记得吗？</p>
+                    <span class="like"><a href="###"><i>+1</i><em>93</em>人赞过</a></span>
+                    <a href="javascript:;" class="detail">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--游戏热点结束-->
+
+
+<!--游戏帮助部分开始-->
+<div class="gameHelp clearfix">
+    <div class="link-box1 link-box">
+        <p>游戏助手</p>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">网易MuMu</span><br>
+            <span class="txt2">电脑玩手游官方模拟器</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">网易游戏APP</span><br>
+            <span class="txt2">网易官方游戏中心</span>
+        </a>
+    </div>
+    <div class="link-box2 link-box">
+        <p>充值购卡</p>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">充值服务</span><br>
+            <span class="txt2">安全，多样，快捷</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">藏宝阁</span><br>
+            <span class="txt2">游戏道具交易系统</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">在线购卡</span><br>
+            <span class="txt2">在线支付，即时使用</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">网易游戏印象</span><br>
+            <span class="txt2">网易周边，官方正品</span>
+        </a>
+    </div>
+    <div class="link-box3 link-box">
+        <p>安全保障</p>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">手机将军令</span><br>
+            <span class="txt2">账号安全，一手掌握</span>
+        </a> <a href="javascript:;" target=_blank>
+        <span class="txt1">举报中心</span><br>
+        <span class="txt2">中国网络游戏版权联盟</span>
+    </a>
+    </div>
+    <div class="link-box4 link-box">
+        <p>辅助工具</p>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">梦幻手游百科</span><br>
+            <span class="txt2">梦幻手游精品资料攻略</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">UU加速器</span><br>
+            <span class="txt2">让您的游戏更顺畅</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">CC语音</span><br>
+            <span class="txt2">沟通无阻，畅玩游戏</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">游戏百科</span><br>
+            <span class="txt2">专业齐全的游戏知识</span>
+        </a>
+        <a href="javascript:;" target=_blank>
+            <span class="txt1">高校联盟</span><br>
+            <span class="txt2">社团活动扶持基地</span>
+        </a><a href="javascript:;" target=_blank>
+        <span class="txt1">游戏推广员</span><br>
+        <span class="txt2">参与推广，获游戏大奖</span>
+    </a><a href="javascript:;" target=_blank>
+        <span class="txt1">网易VIP网吧</span><br>
+        <span class="txt2">享特权，领奖励</span>
+    </a><a href="javascript:;" target=_blank>
+        <span class="txt1">游戏品味</span><br>
+        <span class="txt2">全球精品游戏推荐平台</span>
+    </a>
+    </div>
+    <p class="callMe">
+        <span>客服服务</span>
+        <i>></i>
+        <a href="javascript:;" target=_blank>GM服务</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>账号修复</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>更改密码</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>手机验证特权</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>游戏知道</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>密保中心</a>
+        <i>|</i>
+        <a href="javascript:;" target=_blank>自助百宝箱</a>
+        <i>|</i>
+            <span class="phone">
+                客户电话
+            </span>
+        <i>></i>
+            <span class="pNum">
+                020-83918160
+            </span>
+    </p>
+</div>
+<!--游戏帮助部分结束-->
+
+
+<!--底部部分开始-->
+<div class="footerAll">
+    <p class="footerC">
+<span class="footerL">
+    <a class="a1" href="javascript:;" target=_blank></a>
+    <a class="a2" href="javascript:;" target=_blank></a>
+    <a class="a3" href="javascript:;" target=_blank></a>
+</span>
+<span class="footerR">
+    <span class="RR">
+        <a href="javascript:;" target=_blank>公司简介</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>客户服务</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>相关法律</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>网易游戏</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>联系我们</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>商务合作</a>
+        <i>-</i>
+        <a href="javascript:;" target=_blank>加入我们</a>
+    </span>
+    <br>
+    <span class="RR1">
+        网易公司版权所有 ©1997-2016
+        <a href="javascript:;" target=_blank>中国网络游戏版权保护联盟举报中心</a>
+    </span>
+</span>
+        <span class="RR2">
+        《网络文化经营许可证》粤网文[2014]0636-236号
+    </span>
+    </p>
+</div>
+<!--底部部分结束-->
+
+
+<!--<script src="js/animate.js"></script>-->
+
+
+</body>
+</html>
+
+
+
+
+
+
+

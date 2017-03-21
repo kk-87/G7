@@ -1,0 +1,381 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    /*color: #666;*/
+    background: #fff;
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东主色调*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心*/
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/*css初始化完成*/
+.con-wrap{
+    height: 200px;
+    width:100%;
+    background-color:#BD0F30;
+}
+.con-wrap .con-wrap-whole{
+    position: relative;
+    height: 320px;
+    width: 1260px;
+    top:-120px;
+    z-index:3;
+    margin:0 auto;
+}
+.con-wrap-whole .con-wrap-left{
+    position: absolute;
+    width: 790px;
+    height: 100%;
+    overflow: hidden;
+    left:0;
+}
+
+.con-wrap-left .con-wrap-timeBox{
+    width: 150px;
+    height: 100%;
+    position: relative;
+    background-color: #282B2D;
+}
+.timeBox-month{
+    font-size:12px;
+    color:#727272;
+    text-align:center;
+    margin-top:70px;
+    width:150px;
+    height: 14px;
+}
+.con-wrap-timeBox h1{
+    color: #727272;
+    text-align:center;
+    line-height: 60px;
+    font-size:58px;
+}
+.con-wrap-timeBox .timeBox-redH{
+    height: 5px;
+    width: 22px;
+    background-color: #CF1132;
+    text-align: center;
+    margin:15px auto;
+}
+.con-wrap-timeBox .title{
+    font-size:16px;
+    color:#fff;
+    font-weight:700;
+    text-align:center;
+}
+.con-wrap-timeBox .little-circle{
+    position: absolute;
+    width: 100%;
+    bottom:10px;
+    height: 30px;
+    text-align:center;
+}
+.little-circle a{
+    background-image:url("../images/jlt-ten.png");
+    background-size:57px 57px;
+    width: 10px;
+    height: 10px;
+    margin:0 5px;
+    text-align:center;
+    display: inline-block;
+}
+.gl{
+    background-position: -37px -20px;
+}
+
+.curr{
+    background-position: -47px -20px;
+}
+/*盒子中间图片轮播图*/
+.con-wrap-picBox{
+    width: 640px;
+    height: 100%;
+    overflow: hidden;
+}
+.con-wrap-picBox .con-zj{
+    position: relative;
+    width:1280px;
+    height:100%;
+    float:left;
+}
+.con-wrap-picBox .picBox-left{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 50%;
+}
+.con-wrap-picBox .picBox01{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.picBox-bgi{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/pic-mhxy.jpg");
+}
+.picBox-bgi.p1{
+    background-image: url("../images/pic-ldxy.jpg");
+}
+.picBox-bgi.p2{
+    background-image: url("../images/pic-xw.jpg");
+}
+.picBox-bgi.p3{
+    background-image: url("../images/pic-wl.jpg");
+}
+
+.picBox01 .bgi-font-bottom{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 120px;
+    background-color:#cf1132 ;
+    opacity: .9;
+    width: 100%;
+    display: none;
+}
+.picBox01 .bgi-font-top{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 60px;
+    opacity: .1;
+    width: 100%;
+    display: none;
+    background-image: url("../images/bgcbgc.png");
+}
+.picBox01 a .txt1{
+    position: absolute;
+    font-size:20px;
+    top:60px;
+    width: 100%;
+    line-height: 35px;
+    min-height: 50px;
+    font-weight: 700;
+    text-align:center;
+
+    color:#fff;
+}
+.picBox01 a .txt2{
+    position: absolute;
+    font-size:14px;
+    line-height: 28px;
+    text-align:center;
+    width:230px;
+    left:50%;
+    bottom:110px;
+    margin-left:-115px;
+    color: #fff;
+}
+.picBox01 p{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom:0;
+    left:0;
+    opacity: .9;
+    text-align:center;
+}
+.picBox01 p .likes{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+}
+.picBox01 p .likes .likes-love{
+    height: 30px;
+    color:#fff;
+    font-size: 14px;
+    width: 70px;
+    line-height: 15px;
+    padding-left:30px;
+    background: url("../images/love.png") no-repeat 0 -9px;
+    display:inline-block;
+}
+.con-wrap-picBox .picBox-right {
+    position:absolute;
+    left:640px;
+    top:0;
+    width: 50%;
+    height: 320px;
+}
+    /*盒子最右边*/
+.con-wrap-whole .con-wrap-right{
+    position: absolute;
+    width: 390px;
+    height: 280px;
+    padding:40px 40px 0;
+    overflow: hidden;
+    right:0;
+    background-color: #282B2D;
+}
+.con-wrap-right .addButton{
+    width: 37px;
+    height: 37px;
+    background-image:url("../images/jlt-ten.png");
+    top:0;
+    right:0;
+    position:absolute;
+    background-size:57px 57px;
+}
+.con-wrap-right .newBox{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.newBox .newBox-top{
+    border-bottom: 1px solid #cf0f32;
+    height: 80px;
+}
+.newBox .hot-news{
+    font-size:24px;
+    line-height: 36px;
+    color:#cf0f32;
+    padding-bottom:14px;
+    font-weight:700;
+    text-align:center;
+    text-decoration: none;
+}
+.newBox .newBoxList{
+    position: relative;
+    width: 100%;
+    padding-top:14px;
+    font-family: "微软雅黑";
+}
+.newBoxList  ul li {
+    height: 30px;
+    line-height: 30px;
+}
+.newBoxList  ul li a{
+    color:#c3c3c3;
+    width: 350px;
+    float:left;
+    font-size:14px;
+    text-indent: 15px;
+    background:url(../images/lllxxx.png) 0 center no-repeat;
+}
+.newBoxList  ul li a:hover{
+    font-weight: 700;
+    color:#fff;
+}
+.newBoxList  ul li span{
+    color:#5A6972;
+}
+

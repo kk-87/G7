@@ -1,0 +1,209 @@
+/*css初始化*/
+body,div,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,p,input {
+    margin: 0;
+    padding: 0;
+    font : 12px "microsoft yahei";
+}
+ul,li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    border: 0 none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    display: block;
+    content: ".";
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear:both;
+}
+.clearfix {
+    zoom:1;
+}
+input {
+    border: 0 none;
+    outline-style: none;
+}
+.w {
+    width: 980px;
+    margin: 0 auto;
+}
+/*初始化完成*/
+
+
+/*轮播图部分开始*/
+.all {
+    width: 1349px;
+    height: 720px;
+}
+
+.screen {
+    width: 1349px;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen ul li {
+    width: 1349px;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+.screen ul {
+    left: 0;
+    top: 0px;
+    width: 8094px;
+    position: absolute;
+}
+
+#left {
+    width: 45px;
+    height: 80px;
+    background-color: #cf1132;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 65%;
+    cursor: pointer;
+    font-family: simSun;
+}
+
+#right {
+    width: 45px;
+    height: 80px;
+    background-color: #cf1132;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 65%;
+    cursor: pointer;
+    font-family: simSun;
+}
+
+#left:hover {
+    background-color: black;
+    font-size: 40px;
+}
+
+#right:hover {
+    background-color: black;
+    font-size: 40px;
+}
+
+.all ol {
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: #cf1132;
+}
+
+h2 {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: white;
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.screen p {
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+    border-top: 2px solid #cf1132;
+
+}
+
+.tu {
+    position: absolute;
+    width: 490px;
+    height: 309px;
+    top: 300px;
+}
+
+.tu1 {
+    left: 150px;
+}
+
+.tu2 {
+    left: 1505px;
+}
+
+.tu3 {
+    left: 2855px;
+}
+
+.tu4 {
+    left: 4205px;
+}
+
+.tu5 {
+    left: 5550px;
+}
+
+.tu6 {
+    left: 6895px;
+}
+.tu2 h2,.tu2 p,.tu2 h3{
+    color: darkorange;
+}
+.tu3 h2,.tu3 p,.tu3 h3{
+    color: hotpink;
+}
+.tu4 h2,.tu4 p,.tu4 h3{
+    color: yellowgreen;
+}
+.tu5 h2,.tu5 p,.tu5 h3{
+    color: navajowhite;
+}
+.jianjie {
+    font-size: 35px;
+}
+.jianjies {
+    font-size: 24px;
+}
+
+/*轮播图部分结束*/
+

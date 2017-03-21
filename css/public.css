@@ -1,0 +1,439 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "微软雅黑";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*禁止手动修改大小*/
+textarea {
+    resize: none;
+}
+
+/*去掉图片底部默认空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*合并外连线*/
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "微软雅黑"; /*unitedCode的写法，宋体的写法*/
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+/*a:hover {*/
+/*color: #C81623;*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*京东主色调*/
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心*/
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/*css初始化完成*/
+.Nav {
+    width: 100%;
+    min-width: 1260px;
+    max-width: 1920px;
+    z-index: 9999;
+    position: relative; /*height: 720px;background: url("../images/1.jpg") center top;*/
+}
+
+.topBar {
+    background-color: #fff;
+    width: 100%;
+    min-width: 1260px;
+    opacity: .9;
+    filter: Alpha(Opacity=90);
+    position: relative;
+    z-index: 9999;
+}
+
+.topNav {
+    width: 1260px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 177px;
+    height: 58px;
+    background: url("../images/logo.png") no-repeat scroll 0 0;
+    position: absolute;
+    top: 21px;
+}
+
+.logo a {
+    text-indent: -2222em;
+    width: 177px;
+    height: 58px;
+    display: block;
+}
+
+.ulNav {
+    list-style: none;
+    margin-left: 270px;
+}
+
+.ulNav li {
+    float: left;
+    line-height: 100px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #888;
+}
+
+.ulNav li a {
+    display: block;
+    height: 100px;
+    position: relative;
+}
+
+.ulNav li a i {
+    display: block;
+    position: absolute;
+    height: 5px;
+    background-color: #cf1132;
+    top: 0;
+    left: 0;
+}
+
+.ulNav li a:hover {
+    color: #000;
+}
+
+/*红色方框下拉区域*/
+.rightNav i, .topContent .newGame, .topContent .hotGame, .close i {
+    background-image: url("../images/topBar.png");
+    background-size: 68px 62px;
+}
+
+.rightNav {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cf1132 /*#282b2d*/;
+    z-index: 9999;
+}
+
+.rightNav i {
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    margin-left: -17px;
+    width: 34px;
+    height: 34px;
+}
+
+.topContent {
+    width: 100%;
+    position: absolute;
+    background-color: #282b2d;
+    display: none;
+    top: 100px;
+    font-family: "微软雅黑";
+    padding-bottom: 60px;
+    z-index: 10000;
+}
+
+.topContent p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    margin: 40px 40px 25px;
+    text-indent: 25px;
+}
+
+.topContent span {
+    color: #f2ebeb;
+    font-size: 12px;
+    float: right;
+}
+
+.topContent a {
+    color: #c3c3c3;
+}
+
+.topContent .newGame {
+    width: 11px;
+    height: 11px;
+    background-position: -56px -34px;
+    display: inline-block;
+}
+
+.topContent .hotGame {
+    width: 11px;
+    height: 11px;
+    background-position: -56px -48px;
+    display: inline-block;
+}
+
+span .hotGame, span .newGame {
+    margin: 0 5px;
+}
+
+.topTitle {
+    display: block;
+    background-color: #35373a;
+    padding: 17px 0;
+}
+
+.topConLeft .a {
+    padding-left: 40px;
+}
+
+.topTitle em {
+    display: block;
+    color: #dd1136;
+    font-weight: 700;
+    border-left: 4px solid #dd1136;
+    text-indent: 36px;
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.jsby {
+    width: 314px;
+    border-right: 1px solid #6b6b6c;
+}
+
+.jjxx {
+    width: 177px;
+    border-right: 1px solid #6b6b6c;
+}
+
+.rmtj {
+    width: 177px;
+    border-right: 1px solid #6b6b6c;
+}
+
+.xptj {
+    width: 586px;
+}
+
+.fengl {
+    color: #6b6b6c;
+    font-size: 14px;
+    font-weight: 700;
+    text-indent: 40px;
+    line-height: 14px;
+    padding: 20px 0;
+}
+
+.box ul {
+    padding-left: 40px;
+}
+
+.box ul li {
+    float: left;
+    width: 136px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.box ul li em {
+    margin-left: 5px;
+}
+
+.close {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -38px;
+    padding: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.close i {
+    display: block;
+    width: 56px;
+    height: 14px;
+    background-position: 0 -34px;
+}
+
+.close:hover i {
+    background-position: 0 -48px;
+}
+
+.footerAll {
+    width: 100%;
+    min-width: 1260px;
+    max-width: 1920px;
+    background-color: #272a2c;
+    padding: 20px 0;
+}
+
+.footerC {
+    display: block;
+    margin: 0 auto;
+    width: 765px;
+    padding-top: 15px;
+    font-family: "微软雅黑";
+    position: relative;
+    line-height: 20px;
+    text-align: left;
+}
+
+.footerL {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    position: relative;
+    vertical-align: top;
+}
+
+.footerL .a1 {
+    display: inline-block;
+    width: 118px;
+    height: 31px;
+    background: url(../images/netease.png) no-repeat;
+}
+
+.footerL .a2 {
+    display: inline-block;
+    width: 134px;
+    height: 31px;
+    background: url(../images/nie.png) no-repeat;
+    margin-right: 15px;
+}
+
+.footerL .a3 {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url(../images/wen.png) no-repeat;
+}
+
+.footerR {
+    display: inline-block;
+    text-align: left;
+    padding-left: 6px;
+}
+
+.footerR .RR a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700
+}
+
+.footerR .RR a:hover {
+    text-decoration: underline;
+}
+
+.footerR .RR1, .RR1 a {
+    color: #fff;
+}
+
+.RR2 {
+    display: inline-block;
+    padding-top: 10px;
+    color: #fff;
+}

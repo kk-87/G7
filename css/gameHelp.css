@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gameHelp {
+    width: 1260px;
+    min-width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.gameHelp .link-box {
+    float: left;
+    position: relative;
+    margin-left: 11px;
+}
+
+.gameHelp .link-box1 {
+    width: 152px;
+}
+
+.gameHelp .link-box2 {
+    width: 304px;
+}
+
+.gameHelp .link-box3 {
+    width: 152px;
+}
+
+.gameHelp .link-box4 {
+    width: 608px;
+}
+
+.link-box p {
+    text-indent: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    color: #888;
+    background: url(../images/l-icon_01.png) 0 bottom no-repeat;
+}
+
+.link-box a {
+    position: relative;
+    background-color: #e3e3e3;
+    float: left;
+    width: 150px;
+    padding: 10px 0;
+    margin: 0 2px 2px 0;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.link-box a:hover {
+    background-color: #cf1132;
+    text-decoration: none;
+}
+
+.link-box .txt1 {
+    color: #222;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+
+.link-box .txt2 {
+    color: gray;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.2s ease-out;
+}
+
+.link-box a:hover .txt1 {
+    color: #fff;
+}
+
+.link-box a:hover .txt2 {
+    color: #fff;
+}
+
+.callMe {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #d9dde1;
+}
+
+.callMe span {
+    font-size: 14px;
+    color: #454240;
+}
+
+.callMe a {
+    color: #888;
+    font-size: 12px;
+}
+
+.callMe a:hover {
+    color: #cf1132;
+}
+
+span.phone {
+    margin-left: 430px;
+}
+
+span.pNum {
+    color: #909090;
+    font-size: 18px;
+}

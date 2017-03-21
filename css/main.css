@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #0099cc;
+    font-weight: 700;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+#header {
+    transition: background 1s ease-in-out, height 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(254, 254, 254, 0.85);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10001;
+}
+
+#header .inner {
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -ms-flexbox;
+    background: #e74c3c;
+    border-radius: 100%;
+    width: 30em;
+    height: 30em;
+    padding: 4em;
+    text-align: center;
+    box-shadow: 0 0 0 0.8em #FFF;
+    cursor: default;
+    overflow: hidden;
+}
+
+#header .inner .content {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    position: relative;
+}
+
+
+#header .inner .button {
+    transition: background 1s ease-in-out;
+    margin: 0;
+    border-radius: 30px;
+}
+
+
+#header .inner .content h1 a{
+    font-size: 3em;
+    font-family: 'Pattaya', sans-serif;
+    margin: 0 0 .25em 0;
+    color: #fff;
+}
+
+#header .inner .button.hidden {
+    display: none;
+    cursor: pointer;
+}
+
+#header .inner.hidden {
+    display: none;
+}
+
+#header.hide, #header.preview {
+    transition: background 0.2s ease-in-out, height 1s ease-in-out;
+    background: none;
+    height: 0;
+}
+
+#header.hide .inner, #header.preview .inner {
+    height: 6em;
+    width: 6em;
+    padding: 2em;
+}
+
+#header.hide .inner .content h1, #header.preview .inner .content h1 {
+    display: none;
+}
+
+#header.hide .button.big, #header.preview .button.big {
+    display: none;
+}
+
+#header.hide .button.hidden, #header.preview .button.hidden {
+    text-decoration: none;
+    padding-top: 2.7em;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    display: inline-block;
+}
+
+#header.hide .button.hidden:before,#header.preview  .button.hidden:before {
+
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background-image: url("../images/zy001.png");
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+#header.hide .button.hidden:before, #header.preview .button.hidden:before {
+    content: '';
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+#header.hide .button.hidden span, #header.preview .button.hidden span {
+    display: none;
+}
+
+#imgbox {
+    width: 1150px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#imgbox .inner {
+    width: 260px;
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#imgbox img {
+    width: 260px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+
+}
+
+#imgbox img:hover{
+    transform:scale(1.05);
+}
+
+#imgbox span {
+    width: 240px;
+}
+
+#gotop {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
+#gotop a{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url("../images/db.png");
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+}
+

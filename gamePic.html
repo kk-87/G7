@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易游戏</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/animate_1.js"></script>
+
+    <script>
+        $(function () {
+            $('#header').each(function () {
+
+                var t = jQuery(this),
+                        button = t.find('.button');
+
+                button.click(function (e) {
+
+                    t.toggleClass('hide');
+                });
+
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+        <div class="content">
+            <h1><a href="index.html">G7</a></h1>
+            <a href="###" class="button big alt"><span>G7威武.G7霸气</span></a>
+        </div>
+        <a href="###" class="button hidden"></a>
+    </div>
+</header>
+
+
+<div id="imgbox">
+    <div class="inner">
+        <span></span>
+        <img src="images/P001.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P002.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P003.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P004.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P005.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P006.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P007.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P008.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P009.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P010.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P011.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P012.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P013.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P014.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P015.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P016.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P017.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P018.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P019.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P020.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P021.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P022.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P023.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P024.jpg" alt="">
+    </div>
+    <div class="inner">
+        <span></span>
+        <img src="images/P025.jpg" alt="">
+    </div>
+
+</div>
+<div id="gotop">
+    <a href="###"></a>
+</div>
+
+
+<script>
+    window.onload = function () {
+
+
+        //不透明度
+        function effect(div) {
+            $(function () {
+                $("#imgbox div").mouseenter(function () {
+                    $(this).css("opacity", "1").siblings("div").css("opacity", "0.5");
+
+                })
+                $("#imgbox").mouseleave(function () {
+                    $(this).find("div").css("opacity", "1");
+
+                })
+            })
+        };
+
+        effect(div);
+
+        //瀑布流部分
+        var imgbox = document.getElementById("imgbox");
+        var divs = imgbox.children;
+        var flag = true;
+
+        //列数=版心/div
+        var columns = parseInt(1150 / divs[0].offsetWidth);
+
+        var arr = [];
+        for (var i = 0; i < columns; i++) {
+            arr.push(divs[i].offsetHeight)
+        }
+
+        //第二排后面的图片绝对定位
+        for (var i = columns; i < divs.length; i++) {
+
+            var div = divs[i];
+
+            function assign(div) {
+                var minIndex = getMin(arr).index;
+                var minValue = getMin(arr).value;
+
+                //设置定位
+                div.style.position = "absolute";
+
+//                div.style.left = divs[minIndex].offsetLeft + "px";
+                var X = divs[minIndex].offsetLeft;
+
+                var Y = minValue;
+
+
+//                div.style.top = minValue + "px";
+
+                animate(div, {"left": X, "top": Y}, function () {
+                    flag = true;
+                })
+                arr[minIndex] = minValue + div.offsetHeight;
+
+
+            };
+            assign(div)
+        }
+
+        var datas = [
+            {"src": "images/P001.jpg"},
+            {"src": "images/P002.jpg"},
+            {"src": "images/P003.jpg"},
+            {"src": "images/P004.jpg"},
+            {"src": "images/P005.jpg"},
+            {"src": "images/P006.jpg"},
+            {"src": "images/P007.jpg"},
+            {"src": "images/P008.jpg"},
+            {"src": "images/P009.jpg"},
+            {"src": "images/P010.jpg"},
+            {"src": "images/P011.jpg"},
+            {"src": "images/P012.jpg"},
+            {"src": "images/P013.jpg"},
+            {"src": "images/P014.jpg"},
+            {"src": "images/P015.jpg"},
+            {"src": "images/P016.jpg"},
+            {"src": "images/P017.jpg"},
+            {"src": "images/P018.jpg"},
+            {"src": "images/P019.jpg"},
+            {"src": "images/P020.jpg"},
+            {"src": "images/P021.jpg"},
+            {"src": "images/P022.jpg"},
+            {"src": "images/P023.jpg"},
+            {"src": "images/P024.jpg"},
+            {"src": "images/P025.jpg"},
+
+        ];
+        //生成图片
+        document.onscroll = function () {
+
+
+            var pageHeight = client().height;
+            var scrollTop = scroll().top;
+
+            //节流阀
+            if (flag) {
+
+                if (pageHeight + scrollTop >= divs[divs.length - 1].offsetTop) {
+                    flag = false;
+                    for (var i = 0; i < datas.length; i++) {
+
+                        var div = document.createElement("div")
+                        div.className = "inner";
+                        div.innerHTML = '<img src="' + datas[i].src + '" alt="">';
+                        imgbox.appendChild(div);
+
+                        effect(div);
+                        assign(div);
+
+
+                    }
+                }
+
+            }
+
+            //小火箭
+            scrollTop > 0 ? $("#gotop").show() : $("#gotop").hide();
+            leader=scrollTop;
+        }
+
+        console.log($("#gotop"));
+        var leader = 0;
+        var target = 0;
+        var timer = null;
+        $(function () {
+            $("#gotop>a").on("click", function () {
+                target = 0;
+                timer = setInterval(function () {
+                    leader = leader + (target - leader) / 10;
+                    window.scrollTo(0, leader);
+                    if (leader == target) {
+                        clearInterval(timer);
+                    }
+                }, 20)
+            })
+        })
+
+
+    }
+
+</script>
+
+</body>
+</html>
