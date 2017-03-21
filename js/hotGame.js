@@ -1,6 +1,4 @@
-/**
- * Created by Lenovo on 2016/11/23.
- */
+
 $(function () {
 
     //功能1点击"换一批"换图片
@@ -20,12 +18,9 @@ $(function () {
             }
             $(".box2").children().eq(num).fadeIn(500).siblings().fadeOut(500);
         }
-
-
     });
 
     //点击"玩家热议"显示box2 隐藏box1
-
     $(".con-title .player").click(function () {
         $(".box2").show(500);
         $(".box1").hide(300);
@@ -34,7 +29,6 @@ $(function () {
     })
 
     //点击"玩家热议"显示box1 隐藏box2
-
     $(".con-title .game-video").click(function () {
         $(".box1").show(500);
         $(".box2").hide(300);

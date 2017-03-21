@@ -5,101 +5,11 @@
     <title>新闻动态_网易游戏官网</title>
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src=js/jquery-1.12.4.js></script>
-    <script src=js/topnav.js></script>
-    <script src="js/animate.js"></script>
     <link rel="shortcut icon" href="favicon.ico"/>
-    <script>
-        window.onload = function () {
-            var config = [
-                {
-                    "top": 0,
-                    "left": 0
-                },
-                {
-                    "top": 0,
-                    "left": 326
-                },
-                {
-                    "top": 0,
-                    "left": 652
-                },
-                {
-                    "top": 0,
-                    "left": 978
-                },
-                {
-                    "top": 238,
-                    "left": 0
-                },
-                {
-                    "top": 238,
-                    "left": 326
-                },
-                {
-                    "top": 238,
-                    "left": 652
-                },
-                {
-                    "top": 238,
-                    "left": 978
-                },
-                {
-                    "top": 476,
-                    "left": 0
-                },
-                {
-                    "top": 476,
-                    "left": 326
-                },
-                {
-                    "top": 476,
-                    "left": 652
-                },
-                {
-                    "top": 476,
-                    "left": 978
-                },
-            ]
 
-            var ul = document.getElementById("ullist");
-            var lis = ul.children;
-            for (var i = 0; i < lis.length; i++) {
-                animate(lis[i], config[i]);
-            }
-
-
-            for (var i = 0; i < lis.length; i++) {
-
-                lis[i].onmouseover = function () {
-
-                    var top = parseInt(this.style.top);
-                    this.style.top = top - 5 + "px";
-                }
-                lis[i].onmouseout = function () {
-                    var top = parseInt(this.style.top);
-                    this.style.top = top + 5 + "px";
-                }
-            }
-            var smallul = document.getElementById("smallul");
-            var smalllis = smallul.children;
-
-
-            for (var i = 0; i < smalllis.length; i++) {
-                smalllis[i].onclick = function () {
-
-                    for (var i = 0; i < smalllis.length; i++) {
-                        smalllis[i].className = "";
-                    }
-                    this.className = "smallli";
-                }
-            }
-
-
-        }
-    </script>
 </head>
 <body>
+<!--导航栏开始-->
 <div class="Nav">
     <div class="topBar">
         <div class="topNav">
@@ -306,6 +216,7 @@
         </div>
     </div>
 </div>
+
 <div class="wrap">
     <div class="main ">
         <div class="title heart">
@@ -474,4 +385,96 @@
     <a href="javascript:;"></a>
 </div>
 </body>
+<script src=js/jquery-1.12.4.js></script>
+<script src=js/topnav.js></script>
+<script src="js/animate.js"></script>
+<script>
+    window.onload = function () {
+        var config = [
+            {
+                "top": 0,
+                "left": 0
+            },
+            {
+                "top": 0,
+                "left": 326
+            },
+            {
+                "top": 0,
+                "left": 652
+            },
+            {
+                "top": 0,
+                "left": 978
+            },
+            {
+                "top": 238,
+                "left": 0
+            },
+            {
+                "top": 238,
+                "left": 326
+            },
+            {
+                "top": 238,
+                "left": 652
+            },
+            {
+                "top": 238,
+                "left": 978
+            },
+            {
+                "top": 476,
+                "left": 0
+            },
+            {
+                "top": 476,
+                "left": 326
+            },
+            {
+                "top": 476,
+                "left": 652
+            },
+            {
+                "top": 476,
+                "left": 978
+            },
+        ]
+
+        var ul = document.getElementById("ullist");
+        var lis = ul.children;
+        for (var i = 0; i < lis.length; i++) {
+            animate(lis[i], config[i]);
+        }
+
+
+        for (var i = 0; i < lis.length; i++) {
+
+            lis[i].onmouseover = function () {
+
+                var top = parseInt(this.style.top);
+                this.style.top = top - 5 + "px";
+            }
+            lis[i].onmouseout = function () {
+                var top = parseInt(this.style.top);
+                this.style.top = top + 5 + "px";
+            }
+        }
+        var smallul = document.getElementById("smallul");
+        var smalllis = smallul.children;
+
+
+        for (var i = 0; i < smalllis.length; i++) {
+            smalllis[i].onclick = function () {
+
+                for (var i = 0; i < smalllis.length; i++) {
+                    smalllis[i].className = "";
+                }
+                this.className = "smallli";
+            }
+        }
+
+
+    }
+</script>
 </html>

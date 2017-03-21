@@ -1,6 +1,4 @@
-/**
- * Created by HUCC on 2016/11/5.
- */
+
 /**
  *
  * @param element

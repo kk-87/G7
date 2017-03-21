@@ -1,6 +1,4 @@
-/**
- * Created by kaka on 2016/11/24.
- */
+
 $(function(){
     $(".picBox01").mouseenter(function(){
         $(this).find(".bgi-font-top").stop().slideUp(100);

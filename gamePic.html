@@ -152,7 +152,6 @@
 <script>
     window.onload = function () {
 
-
         //不透明度
         function effect(div) {
             $(function () {
@@ -166,17 +165,14 @@
                 })
             })
         };
-
         effect(div);
 
         //瀑布流部分
         var imgbox = document.getElementById("imgbox");
         var divs = imgbox.children;
         var flag = true;
-
         //列数=版心/div
         var columns = parseInt(1150 / divs[0].offsetWidth);
-
         var arr = [];
         for (var i = 0; i < columns; i++) {
             arr.push(divs[i].offsetHeight)
@@ -186,28 +182,18 @@
         for (var i = columns; i < divs.length; i++) {
 
             var div = divs[i];
-
             function assign(div) {
                 var minIndex = getMin(arr).index;
                 var minValue = getMin(arr).value;
 
                 //设置定位
                 div.style.position = "absolute";
-
-//                div.style.left = divs[minIndex].offsetLeft + "px";
                 var X = divs[minIndex].offsetLeft;
-
                 var Y = minValue;
-
-
-//                div.style.top = minValue + "px";
-
                 animate(div, {"left": X, "top": Y}, function () {
                     flag = true;
                 })
                 arr[minIndex] = minValue + div.offsetHeight;
-
-
             };
             assign(div)
         }
@@ -243,29 +229,22 @@
         //生成图片
         document.onscroll = function () {
 
-
             var pageHeight = client().height;
             var scrollTop = scroll().top;
 
             //节流阀
             if (flag) {
-
                 if (pageHeight + scrollTop >= divs[divs.length - 1].offsetTop) {
                     flag = false;
                     for (var i = 0; i < datas.length; i++) {
-
                         var div = document.createElement("div")
                         div.className = "inner";
                         div.innerHTML = '<img src="' + datas[i].src + '" alt="">';
                         imgbox.appendChild(div);
-
                         effect(div);
                         assign(div);
-
-
                     }
                 }
-
             }
 
             //小火箭
@@ -273,7 +252,6 @@
             leader=scrollTop;
         }
 
-        console.log($("#gotop"));
         var leader = 0;
         var target = 0;
         var timer = null;
@@ -289,10 +267,7 @@
                 }, 20)
             })
         })
-
-
     }
-
 </script>
 
 </body>

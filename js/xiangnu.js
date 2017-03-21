@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2016/11/25.
- */
+
 
 $(function(){
     $(".bomT-R").click(function(){
@@ -14,8 +12,7 @@ var email=document.getElementById("email");
 var mim=document.getElementById("mim");
 var tishi = document.getElementById("tishi");
 var  strengthLevel=document.getElementById("strengthLevel");
-
-
+var arr=["","强度低","强度中","强度高"]
 
 email.onblur = function () {
     var you= /^\w+@\w+(\.\w+)+$/;
@@ -27,7 +24,7 @@ email.onblur = function () {
         this.nextElementSibling.className = "green";
     }
 }
-var arr=["","强度低","强度中","强度高"]
+
 mim.onkeyup=function(){
         var level=0;
         if(/\d/.test(this.value)){

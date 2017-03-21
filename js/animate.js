@@ -1,6 +1,4 @@
-/**
- * Created by HUCC on 2016/11/16.
- */
+
 function animate(element, json, fn) {
     if (element.timer) {
         clearInterval(element.timer);
